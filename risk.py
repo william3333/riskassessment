@@ -52,7 +52,7 @@ def calculate_risk_score(responses):
 st.title("Investor Risk Assessment")
 
 # Collect questionnaire responses from the user
-st.write("Please answer the following questions to calculate your risk score(1~10,the higher, The larger the score, the more risk-averse and more conservative the investment):")
+st.write("Please answer the following questions to calculate your risk score(1~10, The larger the score, the more risk-averse and more conservative the investment):")
 investment_horizon = st.radio("Investment Time Horizon(short_term <2 years;medium_term 2~5 years;long_term>5 years)", ("short_term", "medium_term", "long_term"))
 willingness_to_accept_loss = st.radio("Willingness to Accept Loss", ("low", "medium", "high"))
 prior_investment_experience = st.radio("Prior Investment Experience(no_experience<1 year;some_experience 1~5 year;experienced >5 years)", ("no_experience", "some_experience", "experienced"))
